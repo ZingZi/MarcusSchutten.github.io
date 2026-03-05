@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #040D12;
+    color: #EAEAEA;
+}
+
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.hiden {
+    display: none;
+}
+
+
+/*---------------------------------------------------*/
+
+
+.header-nav {
+    padding: 1rem 1rem;
+    background: rgb(24, 61, 61, 0.1);
+    border-bottom: 1px solid rgb(24, 61, 61, 0.5);
+    backdrop-filter: blur(15px);
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav ul li {
+    list-style: none;
+    margin: 0;
+}
+
+.header-nav ul li a {
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.2 s;
+}
+
+.nav-logo {
+    width: 80px;
+}
+
+.header-nav h3 {
+    margin: 0 1.21rem;
+    padding: 0;
+    margin-right: auto;
+    letter-spacing: 0.3rem;
+    font-size: 1.61rem;
+}
+
+.header-nav button {
+    margin: 0 0 0 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 1.27rem;
+    box-shadow: 0 0 10px wheat;
+}
+
+.header-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* GENERAL FLEX --------------------------------------------- */
+
+.flex-columns {
+    display: flex;
+    justify-content: space-evenly   ;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-columns div {
+    flex: 1;
+    padding: 20px 20px;
+}
+
+.flex-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-box {
+    background-color: rgba(24, 61, 61, 0.5);
+    max-width: 70vw;
+}
+
+ /*HERO------------------------------------------------- */
+
+.hero {
+    height: 70vh;
+ }
+
+.hero.flex-columns div{
+    max-height: 100%;
+    width: 50%;
+}
+
+.hero h1{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 1.27rem;
+}
+
+.hero p {
+    color: #93B1A6;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.hero strong {
+    color: white;
+    font-size: 1.21rem;
+}
+
+.hero div button {
+   margin-top: auto;
+   margin-bottom: 80px;
+   font-size: 1.67rem;
+   padding: 0.5rem 1rem;
+   border-radius: 2px;
+   border: none;
+   background-color: #93B1A6;
+   box-shadow: 0 0 50px #183D3D;
+   width: 200px;
+}
+
+.hero img {
+    position: relative;
+    height: 100%;
+}
+
+/*Fully self-coded-------------------------------------*/
+
+.icons {
+    background-color: rgba(24, 61, 61, 0.1);
+    color: #93B1A6;
+    padding: 200px 40px;
+}
+
+.icons h2 {
+    font-size: 1.27rem;
+    margin-bottom: 40px;
+    text-align: center;
+    word-spacing: 30px;
+    letter-spacing: 5px;
+}
+
+.enlarge {
+    font-size: 2.05rem;
+    font-weight: 600;
+    color: #b6e7d5;
+}
+
+.icons div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons div div img{
+    max-width: 20%;
+    margin-bottom: 10px;
+}
+
+
+/*ABOUT ME------------------------------------------- */
+
+.about-me {
+    justify-content: center;
+}
+
+.about-me .flex-columns .flex-columns {
+    justify-content: left;
+    padding: 0;
+}
+
+.about-me .flex-columns .flex-columns p {
+    flex: 1;
+}
+
+p.i-am {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.61rem;
+    word-spacing: 15px;
+    margin: 30px 0 0 0;
+}
+
+.about-me ul.personal-interests {
+    margin-left: 15px;
+}
+
+.about-me ul.personal-interests li {
+    margin-bottom: 5px;
+}
+
+.about-me ul.flex-columns li {
+    background-color: #183D3D;
+    flex: 1;
+    text-align: center;
+    list-style: none;
+    margin: 0 60px;
+    font-size: 1.27rem;
+    box-shadow: 0 0 20px #040D12;
+}
+
+.about-me ul.flex-columns li a {
+    display: block;
+    padding: 20px;
+}
+
+
+.about-me p.hint-text {
+    text-align: center;
+    color: #5C8374;
+    margin: 10px 0 0 0;
+    font-size: 0.9rem;
+}
+
+.trait-box {
+    background-color: rgba(92, 131, 116, 0.5);
+}
+
+.suspicious-line {
+    background-color: rgba(92, 131, 116, 0.5);
+    height: 2px;
+    line-height: 2px;
+}
+
+.suspicious-line p {
+    margin: 0;
+    text-indent: -99999px;
+    line-height: 2px;
+}
+
+.suspicious-line 
+
+/*I speak------------------------------------------------*/
+
+.i-speak {
+    background-color: rgba(24, 61, 61, 0.1);
+    padding: 60px 0;
+}
+
+.i-speak h2 {
+    font-size: 2.05rem;
+    margin: 0 0 20px 20px;
+}
+
+.i-speak h3 {
+    font-size: 1.27rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.i-speak p {
+    color: #93B1A6;
+    margin: 0;
+}
+
+.i-speak .flex-columns.language-boxe {
+    justify-content: space-evenly;
+    gap: 5vw;
+}
+
+.i-speak img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.i-speak img:hover {
+    transform: scale(1.05);
+}
+
+
+/* */
+
+.nav-bars ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+}
+
+.nav-bars ul li {   
+    text-align: center;
+}
+
+.nav-bars ul li a{
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    display: inline-block;
+    font-size: 1.61rem;
+    text-decoration: none;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+
+
+footer {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
