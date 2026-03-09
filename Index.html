@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Marcus Schutten</title>
+    <title>Marcus Schütten</title>
 </head>
 <body>
     <header>
-        <nav class="header-nav">
-            <h3><a href="">Marcus Schütten</a></h3>
+        <nav class="header-nav flex-columns align-center">
+            <h3><a href="#contact_me">Marcus Schütten</a></h3>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Other</a></li>
             </ul>
-            <button>Contact</button>
+            <button><a href="#contact_me">Contact</a></button>
         </nav>
     </header>
 
@@ -29,12 +29,10 @@
                 <h2>BBA Student / Accounting Major</h2>
                 <p>I am a full-time student with a Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sit facilis amet doloremque et a tempora illum! Autem ipsam ab rerum, vero dolorem, soluta optio odit aspernatur aperiam iure sed!</p>
                 
-                <button>Contact Me</button>
+                <button><a href="#contact_me">Contact Me</a></button>
                 
             </div>
-            <div class="flex-img-box">
-                <img src="Images/profil_bild.jpg" alt="A profile picture of myself">
-            </div>
+            <div class="imgbox"></div>
         </section>
 
         <section class="icons">
@@ -60,35 +58,34 @@
             <div class="flex-columns center-box">
                 <div>
                     <h2>About me</h2>
-                    <div class="flex-columns">
-                        <p><strong>Nationality:</strong> Finnish</p>
-                        <p><strong>Age:</strong> 22</p>
-                        <p><strong>Mother tongue:</strong> Swedish</p>
-                    </div>
-                    <p><strong>BBA accounting major student</strong> at Novia University of Applied Science in Turku, Finland with an interested in accounting, business systems, and technology.</p>
+                    <ul class="flex-columns overlook">
+                        <li><strong>Nationality:</strong> Finnish</li>
+                        <li><strong>Age:</strong> 22</li>
+                        <li><strong>Mother tongue:</strong> Swedish</li>
+                    </ul>
+                    <p><strong>BBA accounting major student</strong> at Novia University of Applied Science in Turku, Finland, with an interest in economics, business systems, and technology.</p>
 
                     <p class="i-am">I am:</p>
-                    <p class="hint-text">Hover for examples</p>
-                    <ul class="flex-columns">
+                    <ul class="flex-columns trait-list">
                         <li><strong><a href="#" class="disabled" id="trait">Optimistic</a></strong></li>
                         <li><strong><a href="#" class="disabled" id="trait">Open-minded</a></strong></li>
                         <li><strong><a href="#" class="disabled" id="trait">Motivated</a></strong></li>
                     </ul>
-                    <div class="suspicious-line"><p>-</p></div>
                     <div class="trait-box hiden" id="optimistic">
-                        <h3>Optimistic</h3>
+                        <h3>When was the last time you felt <strong>OPTIMISTIC</strong> in a tough situation?</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias dolorum voluptas illum iure. Nobis at deleniti voluptate quae, unde nesciunt voluptatem. Odit non laborum, magni quibusdam beatae facilis id?</p>
                     </div>
                     <div class="trait-box hiden" id="open-minded">
-                        <h3>Open-minded</h3>
+                        <h3>How does being <strong>OPEN-MINDED</strong> show in your life?</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias dolorum voluptas illum iure. Nobis at deleniti voluptate quae, unde nesciunt voluptatem. Odit non laborum, magni quibusdam beatae facilis id? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam et hic numquam fugit placeat maxime commodi vero perferendis quam incidunt. Numquam doloribus quos molestiae hic a omnis velit eligendi nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos voluptate ratione illum ut sint error quos corporis unde omnis cumque itaque, incidunt, rem atque velit tempore suscipit? Cumque, velit.</p>
                     </div>
                     <div class="trait-box hiden" id="motivated">
-                        <h3>Motivated</h3>
+                        <h3>How do you stay <strong>MOTIVATED</strong>?</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias dolorum voluptas illum iure. Nobis at deleniti voluptate quae, unde nesciunt voluptatem. Odit non laborum, magni quibusdam beatae facilis id?</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quaerat saepe commodi aliquid explicabo laboriosam accusantium facilis consequuntur, suscipit, laudantium at quos eveniet nemo, eaque iste labore atque quibusdam perferendis.</p>
                     </div>
 
+                    <br>
                     <p>I am a person who enjoys a peaceful cup of tea in the morning before getting active for the day. These activities consists mostly of my studies but also personal goals like:</p>
                     <ul class="personal-interests">
                         <li>Investing</li>
@@ -112,7 +109,7 @@
             <div class="flex-columns language-boxe">
 
                 <div>
-                    <img src="Images/swedishFlag.svg" alt="The swedish flag">
+                    <img src="Images/swedishflag.svg" alt="The swedish flag">
                     <h3>Swedish</h3>
                     <div class="flex-columns">
                         <p>Level: C2</p>
@@ -153,48 +150,50 @@
 
         <section class="nav-section flex-columns">
             <div>
-                <h2>Navigate</h2>
+                <h2>Find out more!</h2>
                 <nav class="nav-bars">
                     <ul>
-                        <li><a href="#">Place 1</a></li>
-                        <li><a href="#">Place 1</a></li>
-                        <li><a href="#">Place 1</a></li>
+                        <li><a href="#" class="education disabled" id="nav_item">Education</a></li>
+                        <li><a href="#" class="work_exp disabled" id="nav_item">Work Experiences</a></li>
+                        <li><a href="#" class="personal disabled" id="nav_item">Personal</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="flex-img-box">
-                <img src="Images/vsc.jpg" alt="">
+                <img src="" alt="Placeholder display" id="nav_image">
             </div>
         </section>
 
 
 
-        <section class="flex-columns">
+        <section class="flex-columns contact-me" id="contact_me">
             <div>
-                <h2>Call to action</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, nihil in tenetur repellat, tempora perferendis aut necessitatibus ducimus odio eaque enim exercitationem nisi explicabo! Consequuntur consectetur neque harum quisquam saepe!</p>
-                <p>Fill the forum or contact me via the following:</p>
-                <p>Gmail</p>
-                <p>Phone</p>
+                <h2>Contact me!</h2>
+                <br>
+                <p><strong>Fill the forum or contact me via the following:</strong></p>
+                <br>
+                <p>Email: marcus.schutten@gmail.com</p>
+                <p>Tel: +358 040 9138991</p>
             </div>
             <div>
-                <form action="form-processor.php" method="POST">
-                    <label for="fullname">Full name: </label>
-                    <input type="text" name="fullname" id="fullname">
+                <form class="flex-rows" action="https://formsubmit.co/marcus.schutten80@gmail.com" method="POST">
+                    <h3>Send me a message quickly.</h3>
 
-                    <label for="youremail">Email: </label>
-                    <input type="email" name="youremail" id="youremail">
+                    <input type="text" name="fullname" placeholder="Full name" id="fullname">
 
-                    <label for="Message">Message: </label>
-                    <input type="text" name="yourmessage" id="yourmessage">
+                    <input type="email" name="youremail" placeholder="Email" id="youremail">
 
-                    <button type="submit">submit</button>
+                    <textarea type="text" name="yourmessage" placeholder="Message" id="yourmessage"></textarea>
+
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </section>
 
+    </main>
 
 
+<!--
     <p style="font-size: 1rem;">This is a test paragraph 1</p>
     <p style="font-size: 1.27rem;">This is a test paragraph 1.27</p>
     <p style="font-size: 1.61rem;">This is a test paragraph 1.61</p>
@@ -202,21 +201,23 @@
     <p style="font-size: 2.60rem;">This is a test paragraph 2.60</p>
     <p style="font-size: 3.30rem;">This is a test paragraph 3.30</p>
 
-    </main>
+-->
 
 
     <footer class="flex-columns">
         <div>
-            <p>Contact me:</p>
-            <p>Gmail</p>
-            <p>Phone</p>
+            <h3>Contact me:</h3>
+            <p>Email: marcus.schutten@gmail.com</p>
+            <p>Tel: +358 040 9138991</p>
         </div>
         <div>
             <p>Find me on:</p>
-            <ul>
-                <li>SOME1</li>
-                <li>SOME2</li>
+            <ul class="flex-columns">
+                <li class="instagram"><a href="https://www.instagram.com/marcus_schutten/">Instagram</a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/marcus-sch%C3%BCtten/">LinkedIN</a></li>
+                <li class="github"><a href="https://github.com/ZingZi">Github</a></li>
             </ul>
+            <br>
         </div>
     </footer>
     
@@ -261,11 +262,19 @@
                 $(open_minded).slideUp(400);
                 $(motivated).slideUp(400);
 
-                console.log(this)
-            })
+            });
         })
 
 
+        $(function () {
+            $(".nav-bars #nav_item").on("mouseenter", function() {
+                if (this.innerHTML === "Education") {
+                    document.getElementById("nav_image").src = "Images/front_school.jpg"
+                } else if (this.innerHTML === "Work Experiences") {
+                    document.getElementById("nav_image").src = "Images/front_work.jpg"
+                }
+            });
+        })
 
 
     </script>
@@ -273,5 +282,3 @@
 
 </body>
 </html>
-
-

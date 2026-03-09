@@ -12,12 +12,15 @@ h1, h2, h3 {
     margin: 0;
 }
 
-ul {
+ul  {
     padding: 0;
 }
 
-a {
+li {
     list-style: none;
+}
+
+a {
     text-decoration: none;
     color: #EAEAEA;
 }
@@ -33,66 +36,58 @@ section {
 
 /*---------------------------------------------------*/
 
-
 .header-nav {
     padding: 1rem 1rem;
-    background: rgb(24, 61, 61, 0.1);
-    border-bottom: 1px solid rgb(24, 61, 61, 0.5);
+    background: rgba(24, 61, 61, 0.1);
+    border-bottom: 1px solid rgba(24, 61, 61, 0.5);
     backdrop-filter: blur(15px);
     margin-bottom: 2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .header-nav ul {
     display: flex;
     gap: 2rem;
-}
-
-.header-nav ul li {
-    list-style: none;
     margin: 0;
 }
 
+
 .header-nav ul li a {
-    position: relative;
     font-size: 1.05rem;
     font-weight: 500;
     padding: 10px 20px;
-    transition: 0.2 s;
-}
-
-.nav-logo {
-    width: 80px;
+    transition: 0.2s;
 }
 
 .header-nav h3 {
-    margin: 0 1.21rem;
-    padding: 0;
     margin-right: auto;
     letter-spacing: 0.3rem;
     font-size: 1.61rem;
 }
 
 .header-nav button {
-    margin: 0 0 0 2rem;
+    color: #EAEAEA;
+    background-color: #183D3D;
+    margin-left: 2rem;
     padding: 0.5rem 1rem;
-    border-radius: 30px;
     font-size: 1.27rem;
-    box-shadow: 0 0 10px wheat;
+    border: none;
+    transition: 0.2s;
+}
+
+.header-nav button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .header-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(24, 61, 61, 0.5);
 }
 
 /* GENERAL FLEX --------------------------------------------- */
 
 .flex-columns {
     display: flex;
-    justify-content: space-evenly   ;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -124,12 +119,15 @@ section {
  /*HERO------------------------------------------------- */
 
 .hero {
-    height: 70vh;
+    padding: 40px 0 80px 0;
  }
 
 .hero.flex-columns div{
     max-height: 100%;
-    width: 50%;
+}
+
+.hero .flex-rows {
+    min-width: 40%;
 }
 
 .hero h1{
@@ -155,26 +153,40 @@ section {
 }
 
 .hero div button {
-   margin-top: auto;
-   margin-bottom: 80px;
-   font-size: 1.67rem;
-   padding: 0.5rem 1rem;
-   border-radius: 2px;
-   border: none;
-   background-color: #93B1A6;
-   box-shadow: 0 0 50px #183D3D;
-   width: 200px;
+    color: #EAEAEA;
+    margin-top: 80px;
+
+    font-size: 1.67rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    border: none;
+    background-color: #b70000;
+    box-shadow: 0 0 20px #9b0000;
+    width: 200px;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-.hero img {
-    position: relative;
-    height: 100%;
+.hero div button:hover {
+    box-shadow: 0 0 40px #9b0000;
+    transform: scale(1.05);
+}
+
+.hero .imgbox {
+    background-image: url("../Images/profil_bild.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 500px;
+    min-height: 400px;
 }
 
 /*Fully self-coded-------------------------------------*/
 
 .icons {
     background-color: rgba(24, 61, 61, 0.1);
+    border-top: 1px solid rgb(24, 61, 61, 0.5);
+    border-bottom: 1px solid rgb(24, 61, 61, 0.5);
     color: #93B1A6;
     padding: 200px 40px;
 }
@@ -201,6 +213,7 @@ section {
 
 .icons div div img{
     max-width: 20%;
+    min-width: 50px;
     margin-bottom: 10px;
 }
 
@@ -220,6 +233,10 @@ section {
     flex: 1;
 }
 
+.about-me ul.overlook {
+    gap: 2rem
+}
+
 p.i-am {
     text-align: center;
     font-weight: bold;
@@ -236,46 +253,32 @@ p.i-am {
     margin-bottom: 5px;
 }
 
-.about-me ul.flex-columns li {
+.about-me ul.trait-list li {
     background-color: #183D3D;
     flex: 1;
     text-align: center;
-    list-style: none;
-    margin: 0 60px;
+    align-content: center;
+    margin: 5px 1%;
     font-size: 1.27rem;
     box-shadow: 0 0 20px #040D12;
 }
 
-.about-me ul.flex-columns li a {
-    display: block;
-    padding: 20px;
+.about-me ul.trait-list li:hover {
+    text-decoration: underline;
 }
 
-
-.about-me p.hint-text {
-    text-align: center;
-    color: #5C8374;
-    margin: 10px 0 0 0;
-    font-size: 0.9rem;
+.about-me ul.trait-list li a {
+    display: block;
+    padding: 20px;
 }
 
 .trait-box {
     background-color: rgba(92, 131, 116, 0.5);
 }
 
-.suspicious-line {
-    background-color: rgba(92, 131, 116, 0.5);
-    height: 2px;
-    line-height: 2px;
+.personal-interests li {
+    list-style-type: circle;
 }
-
-.suspicious-line p {
-    margin: 0;
-    text-indent: -99999px;
-    line-height: 2px;
-}
-
-.suspicious-line 
 
 /*I speak------------------------------------------------*/
 
@@ -309,18 +312,26 @@ p.i-am {
     width: 90%;
     display: block;
     margin: auto;
-    transition: 0.2s;
-}
-
-.i-speak img:hover {
-    transform: scale(1.05);
 }
 
 
-/* */
+
+/*NAV SECTION---------------------------------------------- */
+
+.nav-section {
+    background-color: rgba(24, 61, 61, 0.1);
+    color: #93B1A6;
+    border-top: 1px solid rgb(24, 61, 61, 0.5);
+    border-bottom: 1px solid rgb(24, 61, 61, 0.5);
+}
+
+.nav-section div h2 {
+    color: #EAEAEA;
+    font-size: 2.05rem;
+    margin-bottom: 60px;
+}
 
 .nav-bars ul {
-    list-style: none;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -332,19 +343,206 @@ p.i-am {
 }
 
 .nav-bars ul li a{
-    background-color: rgba(255, 255, 255, 0.05);
-    color: white;
+    background-color: rgba(4, 13, 18, 0.8);
+    color: #b6e7d5;
     display: inline-block;
     font-size: 1.61rem;
+    font-weight: bold;
     text-decoration: none;
     width: 100%;
     padding: 1rem 0;
+    transition: 0.2s;
+}
+
+.nav-bars ul li a:hover {
+    background-color: #183D3D;
+    transform: scale(1.03);
+}
+
+.nav-section img {
+    width: 80%;
+}
+
+/*CONTACT SECTION--------------------------------------------*/
+
+form {
+    background-color: rgba(24, 61, 61, 0.5);
+}
+
+form h3 {
+    margin: 20px 0 20px 20px;
+}
+
+form input {
+    margin: 20px 0 0 20px;
+    width: 40%;
+    padding: 5px;
+}
+
+form textarea {
+    margin: 20px;
+    height: 20vh;
+}
+
+form button {
+    margin: 0 20px 20px 20px;
+    padding: 5px 30px;
+    align-self: flex-start;
+}
+
+
+/*FOOTER------------------------------------------------------*/
+
+footer {
+    background-color: rgba(24, 61, 61, 0.1);
+    padding: 80px 0;
+    border-top: 1px solid rgba(24, 61, 61, 0.5);
+    justify-content: flex-end;
+}
+
+footer ul.flex-columns {
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+footer li{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+footer li a {
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 50px;
+    height: 50px;
+}
+
+li.instagram {
+    background-image: url("../Images/instagram_174855.png");
+}
+
+li.linkedin {
+    background-image: url("../Images/linkedin_174857.png");
+}
+
+li.github{
+    background-image: url("../Images/github_1051326\ \(1\).png");
 }
 
 
 
-footer {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 80px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+
+@media (max-width: 975px) {
+    header nav.flex-columns {
+        flex-direction: column;
+    }
+    .header-nav h3 {
+        margin: 0;
+    }
+
+    .header-nav ul {
+        margin: 20px 0;
+    }
+
+    .header-nav button {
+        margin: 0;
+    }
+
+    .hero {
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .hero div button {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+}
+
+
+@media (max-width: 770px) {
+
+    .header-nav ul li{
+        width: 15vw;
+    }
+
+    .hero .imgbox {
+        min-width: 300px;
+    }
+
+    .enlarge {
+        display: block;
+    }
+
+    .about-me ul.overlook {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+        gap: 1rem;
+    }
+
+    .about-me ul.trait-list {
+        flex-direction: column;
+    }
+
+    .i-speak .language-boxe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav-section div.flex-img-box {
+        display: none;
+    }
+
+    .contact-me {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .header-nav h3 {
+        font-size: 1.27rem;
+    }
+
+    .header-nav {
+        align-items: center;
+    }
+
+    .header-nav ul{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav ul li{
+        width: auto;
+    }
+
+    .hero .imgbox {
+        background-size: 80%;
+        min-width: 200px;
+        min-height: 300px;
+    }
+    
+    .icons div {
+        flex-direction: column;
+    }
+
+    .i-speak .language-boxe {
+        display: grid;
+        grid-template-columns: 50vw;
+    }
+
+    .i-speak .language-boxe div {
+        padding: 10px 0;
+    }
 }
