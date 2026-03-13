@@ -1,0 +1,89 @@
+
+
+main {
+    padding: 40px 20px;
+}
+
+
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    justify-self: center;
+    width: 80%;
+}
+
+.gymnasium {
+    background-image: url(../Images/pg-logo.png);
+}
+
+.novia {
+    background-image: url(../Images/logointernoffset.jpeg);
+}
+
+.landshut {
+    background-image: url(../Images/landshut-logo.png);
+}
+
+section.edu-grid {
+    display: grid;
+    margin: 60px 0;
+    grid-template-columns: 12vw 30vw 1fr;
+    gap: 20px;
+}
+
+section.edu-grid .edu-year {
+    border-right: 2px solid rgb(24, 61, 61, 0.5);
+}
+
+.edu-grid div h2 {
+    margin-bottom: 1rem;
+}
+
+.edu-grid div h3 {
+    letter-spacing: 2px;
+    font-size: 1.10rem;
+}
+
+.edu-grid p a {
+    text-decoration: underline;
+}
+
+.edu-grid div ul {
+    margin-left: 20px;
+}
+
+.edu-grid div ul li {
+    list-style-type: disc;
+    margin: 2px;
+}
+
+section.exchange {
+    margin: 0 40px;
+}
+
+
+@media (max-width: 770px) {
+
+    section.edu-grid {
+        margin: 0;
+    }
+
+    section.edu-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 20vh;
+
+    }
+
+    section.edu-grid .edu-year {
+        border-right: 0px;
+        border-bottom: 2px solid rgb(24, 61, 61, 0.5);
+    }
+    
+    .bg-img {
+        width: 100%;
+    }
+    
+    
+}
